@@ -10,9 +10,9 @@ def saludo(request):
 def segunda_vista(request):
     return HttpResponse("<br><br>En esta página hay información sobre instalaciones nucleares en Argentina")
 
-def miapellidoes(self, apellido):
-    docdetexto = f"Mi apellido es: <br><br> {apellido}"
-    return HttpResponse(docdetexto)
+#def miapellidoes(self, apellido):
+#   docdetexto = f"Mi apellido es: <br><br> {apellido}"
+#   return HttpResponse(docdetexto)
 
 def probandotemplate(self):
     

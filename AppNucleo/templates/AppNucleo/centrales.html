@@ -1,0 +1,20 @@
+{% extends "AppNucleo/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    {% if cenformulario.errors %}
+    <p style="color: red;"> Están mal los datos, revisar.</p>
+    {% endif %}
+
+    <form action="" method="POST">{% csrf_token %}
+
+        <table>
+            {{ cenformulario.as_table }}
+        </table>
+    
+        <input type="submit", value="Enviar">
+    </form>
+
+{% endblock %}

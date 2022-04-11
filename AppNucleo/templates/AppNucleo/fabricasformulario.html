@@ -1,0 +1,19 @@
+{% extends "AppNucleo/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    {% if fabformulario.errors %}
+    <p style="color: red;"> Están mal los datos, revisar.</p>
+    {% endif %}
+
+    <form action="" method="POST">{% csrf_token %}
+
+        <table>
+            {{ fabformulario.as_table}}
+        </table>
+        
+        <input type="submit", value="Enviar">
+    </form>
+
+{% endblock %}

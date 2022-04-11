@@ -18,7 +18,6 @@ class Migration(migrations.Migration):
                 ('nombre', models.CharField(max_length=40)),
                 ('ubicacion', models.CharField(max_length=30)),
                 ('cant_EC', models.IntegerField()),
-                ('inicio', models.DateField()),
             ],
         ),
         migrations.CreateModel(
